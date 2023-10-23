@@ -1,0 +1,9 @@
+---
+- name: ansible playbook test
+  hosts: server-1
+  tasks:
+  - name: create file
+    ansible.builtin.file:
+      path: /home/ec2-user/ersin.txt
+      state: touch
+    
